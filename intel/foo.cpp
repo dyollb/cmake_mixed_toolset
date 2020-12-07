@@ -1,7 +1,10 @@
+#include "foo.h"
+
+#include "../vs/foo.h"
 
 #include <cmath>
 
-double Foo()
+double Foo2()
 {
-	return 10. - std::pow(1.01, 10.0);
+	return Foo();
 }

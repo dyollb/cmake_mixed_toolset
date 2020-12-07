@@ -1,3 +1,4 @@
+#include "foo.h"
 
 #include <cmath>
 
