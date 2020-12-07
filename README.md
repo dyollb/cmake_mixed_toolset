@@ -8,4 +8,4 @@ This little example project makes use of `ExternalProject` to build specific lib
 Those libraries are then configured and built in a separate solution, into the same output directories. The main project orchestrates this, using dependencies.
 
 ### Why not use VS_PLATFORM_TOOLSET?
-Unfortunately, the `VS_PLATFORM_TOOLSET` property is not intended for this kind of mixing of toolsets, and may lead to subtle problems, because CMake caches global settings for one single toolset.
+Unfortunately, the `VS_PLATFORM_TOOLSET` property is not intended for this kind of mixing of toolsets, and may lead to subtle problems, because CMake caches global settings for one single toolset (See [17358](https://gitlab.kitware.com/cmake/cmake/-/issues/17358), [20590](https://gitlab.kitware.com/cmake/cmake/-/issues/20590)).
